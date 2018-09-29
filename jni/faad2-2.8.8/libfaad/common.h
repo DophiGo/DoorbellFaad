@@ -119,9 +119,9 @@ extern "C" {
   #undef ERROR_RESILIENCE
 #endif
 
-#define SBR_DEC
+//#define SBR_DEC
 //#define SBR_LOW_POWER
-#define PS_DEC
+//#define PS_DEC
 
 #ifdef SBR_LOW_POWER
 #undef PS_DEC

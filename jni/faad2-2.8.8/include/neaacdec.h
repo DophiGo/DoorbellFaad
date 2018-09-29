@@ -249,6 +249,11 @@ NEAACDECAPI char NeAACDecAudioSpecificConfig(unsigned char *pBuffer,
 NEAACDECAPI int NeAACDecGetVersion(char **faad_id_string,
                                    char **faad_copyright_string);
 
+NEAACDECAPI NeAACDecHandle aac_decode_init();
+
+NEAACDECAPI int aac_decode(NeAACDecHandle hDecoder, char *pInputBuf, unsigned int dwInputSize, short* pOutputBuf, unsigned int* dwOutputSize);
+
+
 #ifdef _WIN32
   #pragma pack(pop)
 #endif
